@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-analytics",
+    "name": "luanfreitasdev/laravel-analytics",
     "description": "A Laravel package to retrieve Google Analytics data.",
     "keywords": [
         "spatie",
@@ -9,7 +9,7 @@
         "reports",
         "laravel"
     ],
-    "homepage": "https://github.com/spatie/laravel-analytics",
+    "homepage": "https://github.com/luanfreitasdev/laravel-analytics",
     "license": "MIT",
     "authors": [
         {

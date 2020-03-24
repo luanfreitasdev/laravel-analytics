@@ -62,7 +62,7 @@ class Analytics
     {
         $response = $this->performQuery(
             $period,
-            'ga:users,ga:pageviews',
+            'ga:users,ga:pageviews,ga:sessions',
             ['dimensions' => 'ga:date']
         );
 
@@ -71,6 +71,7 @@ class Analytics
                 'date' => Carbon::createFromFormat('Ymd', $dateRow[0]),
                 'visitors' => (int) $dateRow[1],
                 'pageViews' => (int) $dateRow[2],
+                'sessions' => (int) $dateRow[3],
             ];
         });
     }
@@ -198,3 +199,5 @@ class Analytics
         return $this->client->getAnalyticsService();
     }
 }
+
+
